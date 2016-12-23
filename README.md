@@ -1,6 +1,6 @@
 # [simter-json](https://github.com/simter/simter-json) [[中文]]
 
-Json extension tools for [JSR-353] (Java API for JSON Processing).
+Json extension tools for [JSR-353] \(Java API for JSON Processing\).
 
 JsonObject and JsonArray are design to be a immutable object. Once created, it can not be changed. 
 But sometimes we need to modify or extend it. This is the target of this extension tools.
@@ -107,4 +107,5 @@ mvn clean deploy -Poss
 [Jackson]: https://github.com/FasterXML/jackson-datatype-jsr353
 [Glassfish]: https://jsonp.java.net/download.html
 [oss.sonatype.org]: https://oss.sonatype.org
+[simter-parent]: https://github.com/simter/simter-parent
 [中文]: https://github.com/simter/simter-json/blob/master/docs/README.zh-cn.md

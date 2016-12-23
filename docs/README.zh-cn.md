@@ -1,6 +1,6 @@
 # [simter-json](https://github.com/simter/simter-json) [[English]]
 
-[JSR-353] (Java API for JSON Processing) 的扩展工具包。
+[JSR-353] \(Java API for JSON Processing\) 的扩展工具包。
 
 [JSR-353] 中的 JsonObject 和 JsonArray 被设计为不可变对象，即实例创建后是不能进行任何修改的。
 但有时我们需要修改或者扩展一个已经实例化的 JsonObject 或 JsonArray 对象，这个扩展工具就是干这个事的。
@@ -105,4 +105,5 @@ mvn clean deploy -Poss
 [Jackson]: https://github.com/FasterXML/jackson-datatype-jsr353
 [Glassfish]: https://jsonp.java.net/download.html
 [oss.sonatype.org]: https://oss.sonatype.org
+[simter-parent]: https://github.com/simter/simter-parent/blob/master/docs/README.zh-cn.md
 [English]: https://github.com/simter/simter-json/blob/master/README.md
