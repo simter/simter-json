@@ -11,7 +11,7 @@ But sometimes we need to modify or extend it. This is the target of this extensi
 <dependency>
   <groupId>tech.simter</groupId>
   <artifactId>simter-json</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
 </dependency>
 ```
 
@@ -94,12 +94,25 @@ First take a look at [simter-parent] deploy config.
 mvn clean deploy -Plan
 ```
 
-### Deploy to Maven Central Repository through [oss.sonatype.org]
+### Deploy to Sonatype Repository
 
 ```bash
-mvn clean deploy -Poss
+mvn clean deploy -Psonatype
 ```
 
+After deployed, login into <https://oss.sonatype.org>. Through `Staging Repositories`, search this package, 
+then close and release it. After couple hours, it will be synced 
+to [Maven Central Repository](http://repo1.maven.org/maven2/tech/simter/simter-json).
+
+### Deploy to Bintray Repository
+
+```bash
+mvn clean deploy -Pbintray
+```
+
+Will deploy to `https://api.bintray.com/maven/simter/maven-repo/simter-json/;publish=1`.
+So first create a package `https://bintray.com/simter/maven-repo/simter-json` on Bintray.
+After deployed, check it from <https://simter.bintray.com/maven-repo/tech/simter/simter-json>.
 
 [Java API for JSON Processing]: https://jcp.org/en/jsr/detail?id=353
 [JSR-353]: https://jcp.org/en/jsr/detail?id=353
