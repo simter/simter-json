@@ -4,10 +4,11 @@
   <parent>
     <groupId>tech.simter</groupId>
     <artifactId>simter-parent</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.3.0</version>
     <relativePath/>
   </parent>
   <artifactId>simter-json</artifactId>
+  <version>0.3.0</version>
   <packaging>jar</packaging>
   <name>simter-json</name>
   <description>Json extension for JSR-353 (Java API for JSON Processing)</description>
