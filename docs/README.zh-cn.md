@@ -11,7 +11,7 @@
 <dependency>
   <groupId>tech.simter</groupId>
   <artifactId>simter-json</artifactId>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
 </dependency>
 ```
 
@@ -90,13 +90,13 @@ mvn clean package
 ### 发布到局域网 Nexus 仓库
 
 ```bash
-mvn clean deploy -Plan
+mvn clean deploy -P lan
 ```
 
 ### 发布到 Sonatype 仓库
 
 ```bash
-mvn clean deploy -Psonatype
+mvn clean deploy -P sonatype
 ```
 
 发布成功后登陆到 <https://oss.sonatype.org>，在 `Staging Repositories` 找到这个包，然后将其 close 和 release。
@@ -105,12 +105,12 @@ mvn clean deploy -Psonatype
 ### 发布到 Bintray 仓库
 
 ```bash
-mvn clean deploy -Pbintray
+mvn clean deploy -P bintray
 ```
 
-发布之前要先在 Bintray 创建 package `https://bintray.com/simter/maven-repo/simter-json`。
-发布到的地址为 `https://api.bintray.com/maven/simter/maven-repo/simter-json/;publish=1`。
-发布成功后可以到 <https://simter.bintray.com/maven-repo/tech/simter/simter-json> 检查一下结果。
+发布之前要先在 Bintray 创建 package `https://bintray.com/simter/maven/tech.simter:simter-json`。
+发布到的地址为 `https://api.bintray.com/maven/simter/maven/tech.simter:simter-json/;publish=1`。
+发布成功后可以到 <https://jcenter.bintray.com/tech/simter/simter-json> 检查一下结果。
 
 
 [JSR-353]: https://jcp.org/en/jsr/detail?id=353
