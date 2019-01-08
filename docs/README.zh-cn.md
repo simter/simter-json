@@ -11,7 +11,7 @@
 <dependency>
   <groupId>tech.simter</groupId>
   <artifactId>simter-json</artifactId>
-  <version>0.3.0</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
