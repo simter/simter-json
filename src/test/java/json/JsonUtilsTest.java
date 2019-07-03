@@ -1,18 +1,18 @@
 package json;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import tech.simter.json.JsonUtils;
 
 import javax.json.*;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * @author RJ 2016-12-22
+ * @author RJ
  */
-public class JsonUtilsTest {
+class JsonUtilsTest {
   @Test
-  public void toJsonObjectBuilder() {
+  void toJsonObjectBuilder() {
     // empty
     assertEquals("{}", JsonUtils.toBuilder((JsonObject) null).build().toString());
 
@@ -28,7 +28,7 @@ public class JsonUtilsTest {
   }
 
   @Test
-  public void toJsonArrayBuilder() {
+  void toJsonArrayBuilder() {
     // empty
     assertEquals("[]", JsonUtils.toBuilder((JsonArray) null).build().toString());
 
@@ -43,7 +43,7 @@ public class JsonUtilsTest {
   }
 
   @Test
-  public void mergeJsonObjects() {
+  void mergeJsonObjects() {
     // empty
     assertEquals("{}", JsonUtils.merge((JsonObject) null).build().toString());
 
@@ -70,7 +70,7 @@ public class JsonUtilsTest {
   }
 
   @Test
-  public void mergeJsonObjectBuilders() {
+  void mergeJsonObjectBuilders() {
     // empty
     assertEquals("{}", JsonUtils.merge((JsonObjectBuilder) null).build().toString());
 
@@ -97,7 +97,7 @@ public class JsonUtilsTest {
   }
 
   @Test
-  public void mergeJsonArrays() {
+  void mergeJsonArrays() {
     // empty
     assertEquals("[]", JsonUtils.merge((JsonArray) null).build().toString());
 
@@ -117,7 +117,7 @@ public class JsonUtilsTest {
   }
 
   @Test
-  public void mergeJsonArrayBuilders() {
+  void mergeJsonArrayBuilders() {
     // empty
     assertEquals("[]", JsonUtils.merge((JsonArrayBuilder) null).build().toString());
 
